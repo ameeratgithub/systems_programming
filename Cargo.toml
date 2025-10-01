@@ -1,0 +1,26 @@
+[package]
+name = "systems_programming"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[[example]]
+name = "bit_patterns_types"
+path = "examples/data/bit_patterns_types.rs"
+
+[[example]]
+name = "integer_life"
+path = "examples/data/integer_life.rs"
+
+[[example]]
+name = "decimal_representation"
+path = "examples/data/decimal_representation.rs"
+
+[[example]]
+name = "fixed_point_numbers"
+path = "examples/data/fixed_point_numbers.rs"
+
+[[example]]
+name = "random_probabilities"
+path = "examples/data/random_probabilities.rs"
