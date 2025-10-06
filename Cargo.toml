@@ -4,6 +4,12 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+piston_window = "0.117"
+piston2d-graphics = "0.39"
+rand = "0.8"
+winapi = "0.2"
+# Provides interaction with KERNEL.DLL from Windows API
+kernel32-sys = "0.2"
 
 [[example]]
 name = "bit_patterns_types"
@@ -24,3 +30,19 @@ path = "examples/data/fixed_point_numbers.rs"
 [[example]]
 name = "random_probabilities"
 path = "examples/data/random_probabilities.rs"
+
+[[example]]
+name = "pointers_with_references"
+path = "examples/memory/pointers_with_references.rs"
+
+[[example]]
+name = "smart_pointers"
+path = "examples/memory/smart_pointers.rs"
+
+[[example]]
+name = "scanning_running_program_memory"
+path = "examples/memory/scanning_running_program_memory.rs"
+
+[[example]]
+name = "inspect_program_memory"
+path = "examples/memory/inspect_program_memory.rs"

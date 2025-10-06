@@ -1,5 +1,6 @@
 mod cpu_emulator;
+mod heap_visualizer;
 
 fn main() {
-    cpu_emulator::load_and_run();
+    heap_visualizer::visualize();
 }
