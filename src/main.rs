@@ -1,6 +1,9 @@
 mod cpu_emulator;
-mod heap_visualizer;
+// Uncomment following module if you want to visualize the heap allocations
+// mod heap_visualizer;
+mod kv_store;
 
 fn main() {
-    heap_visualizer::visualize();
+    // heap_visualizer::visualize();
+    kv_store::run();
 }

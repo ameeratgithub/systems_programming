@@ -117,11 +117,11 @@ impl CPU {
 
 }
 
+#[allow(dead_code)]
 pub fn load_and_run() {
     call_user_defined_functions();
 }
 
-#[allow(dead_code)]
 fn call_user_defined_functions() {
     let mut cpu = CPU::new();
 
