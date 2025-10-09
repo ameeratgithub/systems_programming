@@ -7,11 +7,12 @@ use std::{
 
 use byteorder::{LittleEndian, ReadBytesExt, WriteBytesExt};
 use crc::crc32;
+use serde_derive::{Deserialize, Serialize};
 
 pub type ByteString = Vec<u8>;
 pub type ByteStr = [u8];
 
-// #[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize)]
 pub struct KeyValuePair {
     pub key: ByteString,
     pub value: ByteString,
